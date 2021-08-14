@@ -22,3 +22,52 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 
+  Customize Clerk Modals 
+*/
+
+/* Add wrapper div border & shadow */
+.cl-wrapper {
+  position: relative;
+  margin: auto;
+  width: 480px;
+  background-color: white;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.16);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Style custom header font */
+.cl-custom-header {
+  padding: 2rem 2rem 1rem 2rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Remove main border && shadow */
+.cl-component.cl-sign-in, .cl-component.cl-sign-up {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 2rem !important;
+}
+
+/* Remove logo and top padding */
+.cl-component .cl-logo {
+    display: none !important;
+}
+.cl-component .cl-auth-form-header {
+  display: none !important;
+  margin-top: 1rem !important;
+}
+
+/* Shrink padding on top of bottom link */
+.cl-component .cl-auth-form-link {
+  margin-top: 1rem !important;
+}
+
+/* Shrink Input height */
+.cl-component input {
+  border: 1px solid #e5e5e5 !important;
+  padding: 0.75rem !important;
+}
