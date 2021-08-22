@@ -35,10 +35,9 @@ yarn-error.log*
 
 # Yarn 2 with PNP and Zero-Installs
 .yarn/*
-# !.yarn/cache
-# !.yarn/releases
-# !.yarn/plugins
-# !.yarn/sdks
-# !.yarn/versions
-# .yarn/unplugged
-# .yarn/build-state.yml
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
