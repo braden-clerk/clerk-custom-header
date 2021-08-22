@@ -1,10 +1,12 @@
-import { SignUp } from "@clerk/clerk-react";
+import { ClerkLoaded, SignUp } from "@clerk/clerk-react";
 
 const SignUpPage = () => (
-  <div className="cl-wrapper">
-    <div className="cl-custom-header">You need to sign up to continue</div>
-    <SignUp path="/sign-up" routing="path" />
-  </div>
+  <ClerkLoaded>
+    <div className="cl-wrapper">
+      <div className="cl-custom-header">You need to sign up to continue</div>
+      <SignUp path="/sign-up" routing="path" />
+    </div>
+  </ClerkLoaded>
 );
 
 export default SignUpPage;
